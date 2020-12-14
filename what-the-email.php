@@ -13,7 +13,7 @@ class What_The_Email
 
 	private static $instance;
 
-	var $blocked_senders = array(
+	public $blocked_senders = array(
 			'twitter-invite-comment',
 			'notifications@academia.edu',
 			'invitations@boxbe.com',
@@ -40,7 +40,7 @@ class What_The_Email
 			'noreply@',
 		);
 
-	var $blocked_subjects = array(
+	public $blocked_subjects = array(
 			'Auto Response',
 			'auto-response',
 			'Auto Respond',
@@ -77,7 +77,7 @@ class What_The_Email
 			'Jawaban Otomatis',
 		);
 
-	var $blocked_messages = array(
+	public $blocked_messages = array(
 			'Having trouble viewing this email?',
 			'autoreply',
 			'auto reply',
@@ -156,7 +156,7 @@ go to my Inbox.',
 			'Mailiniz ulaşmıştır ilginiz için teşekkür ederiz.',
 		);
 
-	var $email_body_regex = array(
+	public $email_body_regex = array(
 			// On Saturday, October 27, 2012 at 3:28 PM, Testing wrote:
 			'(On|At|In|Il|Em|Pada|Le|Am){1}\s.+(wrote|writes|scritto|escreveu|menulis|écrit|(schrieb.+)){1}\s?:',
 		);
